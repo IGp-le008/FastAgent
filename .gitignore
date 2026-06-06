@@ -1,0 +1,13 @@
+#By default ignore all
+*/
+
+#Add only specific files
+!app
+!app/**
+!compose.yaml
+!Docker
+!.gitignore
+
+#Donot include any .env files
+*.env
+*.swp
