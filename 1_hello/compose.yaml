@@ -1,8 +1,10 @@
 services:
         webserver:
                 build:
-                        context: .
-                        dockerfile: Dockerfile
+                        context: ./app
+                        dockerfile: static.Dockerfile
                 ports:
-                        - "8080:80"
+                        - 8080:80
                 container_name: static_website
+                volumes:
+                        - ./app:/usr/share/nginx/html/
