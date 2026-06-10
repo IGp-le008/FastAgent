@@ -2,13 +2,21 @@
 */
 
 #Add only specific files
-!app
-!app/**
-!compose.yaml
-!Docker
-!.gitignore
+
 !1_hello
 !1_hello/**
+
+!app
+!app/**
+
+!backend
+!backend/**
+
+!.gitignore
+
+!compose.yaml
+!Docker
+
 
 #Donot include any .env files
 *.env

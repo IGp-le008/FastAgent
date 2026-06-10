@@ -1,4 +1,5 @@
 services:
+        #for static-website
         webserver:
                 build:
                         context: ./app
@@ -8,3 +9,14 @@ services:
                 container_name: static_website
                 volumes:
                         - ./app:/usr/share/nginx/html/
+
+        #for backend
+        backend:
+                build:
+                        context: ./app
+                        dockerfile: backend.Dockerfile
+                ports:
+                        - 8000:8000
+                container_name: backend
+                volumes:
+                        - ./backend/src:/app
