@@ -9,6 +9,10 @@
 !app
 !app/**
 
+!2_structured_output
+!2_structured_output/**
+
+
 !backend
 !backend/**
 
